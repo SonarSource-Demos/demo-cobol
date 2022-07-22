@@ -24,7 +24,8 @@
        ENVIRONMENT DIVISION.                                            
        CONFIGURATION SECTION.                                           
          SPECIAL-NAMES.                                                 
-           SYMBOLIC CHARACTERS APOSTR IS 126.                           
+           SYMBOLIC CHARACTERS APOSTR IS 126.
+         SOURCE-COMPUTER. IBM-370 WITH DEBUGGING MODE.                           
                                                                         
        DATA DIVISION.                                                   
       ***************************************************************** 
@@ -733,7 +734,7 @@
       *---------------------------------------------------------------  CGS100W
       *                Version : V03600                                 CGS100W
       *                                                                 CGS100W
-      * Chantier : 2145T     Début : 14/12/2011     Fin : 20/12/2011    CGS100W
+      * Chantier : 2145T     Dï¿½but : 14/12/2011     Fin : 20/12/2011    CGS100W
       *                                                                 CGS100W
       * Texte  :                                                        CGS100W
       *                                                                 CGS100W
@@ -745,11 +746,11 @@
       *---------------------------------------------------------------  CGS100W
       *                Version : V04200                                 CGS100W
       *                                                                 CGS100W
-      * Chantier : H8793     Début : 18/11/2013     Fin : 18/11/2013    CGS100W
+      * Chantier : H8793     Dï¿½but : 18/11/2013     Fin : 18/11/2013    CGS100W
       *                                                                 CGS100W
-      * Texte  : en cas d"explosion générale, on fait appel à l'IGAD danCGS100W
+      * Texte  : en cas d"explosion gï¿½nï¿½rale, on fait appel ï¿½ l'IGAD danCGS100W
       *          paragraphe AG242-LECT-BASE-TABAK avec cd fonction 'd0c'CGS100W
-      *          n'est pas prévu par l'équipe des données pour lire cddoCGS100W
+      *          n'est pas prï¿½vu par l'ï¿½quipe des donnï¿½es pour lire cddoCGS100W
       *                                                                 CGS100W
       * DMFS  :                                                         CGS100W
       *       :                                                         CGS100W
@@ -757,11 +758,11 @@
       *---------------------------------------------------------------  CGS100W
       *                Version : V04300                                 CGS100W
       *                                                                 CGS100W
-      * Chantier : 2296E     Début : 09/04/2014     Fin : 09/04/2014    CGS100W
+      * Chantier : 2296E     Dï¿½but : 09/04/2014     Fin : 09/04/2014    CGS100W
       *                                                                 CGS100W
-      * Texte  : a998.ccr2296e:Réforme CA-Gestion compteurs-à compter 07CGS100W
-      *          passage du CLCA à la PrePare pour dossiers avec naiss./CGS100W
-      *          à compter 07/2014-inciter parents à partager Congé PareCGS100W
+      * Texte  : a998.ccr2296e:Rï¿½forme CA-Gestion compteurs-ï¿½ compter 07CGS100W
+      *          passage du CLCA ï¿½ la PrePare pour dossiers avec naiss./CGS100W
+      *          ï¿½ compter 07/2014-inciter parents ï¿½ partager Congï¿½ PareCGS100W
       *                                                                 CGS100W
       * DMFS  :                                                         CGS100W
       *       :                                                         CGS100W
@@ -887,9 +888,9 @@
       ***************************************************************** WAZIS
       ***************************************************************** WAZIS
       ***  ! ! ! ! ! ! ! !    A T T E N T I O N    ! ! ! ! ! ! ! !  *** WAZIS
-      ***  En TP, les VALUE sont à prendre à titre indicatif        *** WAZIS
+      ***  En TP, les VALUE sont ï¿½ prendre ï¿½ titre indicatif        *** WAZIS
       ***  Ds modules de la LOCCOM, INITIALIZE d'un niveau 01 avec  *** WAZIS
-      ***  AZIS pour 500 + 29500 caract.  ==>  Annulat° des VALUE)  *** WAZIS
+      ***  AZIS pour 500 + 29500 caract.  ==>  Annulatï¿½ des VALUE)  *** WAZIS
       ***  ! ! ! ! ! ! ! !    A T T E N T I O N    ! ! ! ! ! ! ! !  *** WAZIS
       ***************************************************************** WAZIS
       ***************************************************************** WAZIS
@@ -897,37 +898,37 @@
          02 AZIS-PARTIE-FIXE.                                           WAZIS
            11 AZIS-D4A2MJ                        PIC S9(9) COMP-3.      WAZIS
       *---------------------------------------------------------------* WAZIS
-      *  la zone azis-erreur contient l'éventuelle info erreur        * WAZIS
-      * 1-acces db2 decoupé comme suit:                               * WAZIS
-      *   entrée                                                        WAZIS
+      *  la zone azis-erreur contient l'ï¿½ventuelle info erreur        * WAZIS
+      * 1-acces db2 decoupï¿½ comme suit:                               * WAZIS
+      *   entrï¿½e                                                        WAZIS
       *     numero dossier             7 pos                            WAZIS
       *     code chaine                3 pos                            WAZIS
       *     type probleme              1 pos                            WAZIS
       *     type destinataire erreur   1 pos                            WAZIS
       *     programme appelant igad    8 pos                            WAZIS
       *     copy procedure appelant    8 pos                            WAZIS
-      *     entite logique db2 ddé     3 pos                            WAZIS
-      *     gdd   ddé                  3 pos                            WAZIS
-      *     fonction igad ddé          3 pos                            WAZIS
-      *     nbre occurences ddé        3 pos                            WAZIS
+      *     entite logique db2 ddï¿½     3 pos                            WAZIS
+      *     gdd   ddï¿½                  3 pos                            WAZIS
+      *     fonction igad ddï¿½          3 pos                            WAZIS
+      *     nbre occurences ddï¿½        3 pos                            WAZIS
       *     type appelant b,t          1 pos                            WAZIS
       *     code image v,m,c           1 pos                            WAZIS
-      *     date debut demandé         8 pos                            WAZIS
-      *     date fin   demandé         8 pos                            WAZIS
+      *     date debut demandï¿½         8 pos                            WAZIS
+      *     date fin   demandï¿½         8 pos                            WAZIS
       *   sortie                                                        WAZIS
-      *     code retour général        5 pos                            WAZIS
-      *     code retour détaillé       3 pos                            WAZIS
+      *     code retour gï¿½nï¿½ral        5 pos                            WAZIS
+      *     code retour dï¿½taillï¿½       3 pos                            WAZIS
       * 2-applicatif                                                  * WAZIS
-      *   entrée                                                        WAZIS
+      *   entrï¿½e                                                        WAZIS
       *     numero dossier             7 pos                            WAZIS
       *     code chaine                3 pos                            WAZIS
       *     type probleme              1 pos                            WAZIS
       *     type destinataire erreur   1 pos                            WAZIS
       *     programme appelant igad    8 pos                            WAZIS
       *     copy procedure appelant    8 pos                            WAZIS
-      *     date debut demandé         8 pos                            WAZIS
-      *       ex:pour accèder à un paramètre à une date x               WAZIS
-      *          si celui est non trouvé il peut etre utile de connaitreWAZIS
+      *     date debut demandï¿½         8 pos                            WAZIS
+      *       ex:pour accï¿½der ï¿½ un paramï¿½tre ï¿½ une date x               WAZIS
+      *          si celui est non trouvï¿½ il peut etre utile de connaitreWAZIS
       *          la date x de recherche                                 WAZIS
       *   sortie                                                        WAZIS
       *     code cabend                1 pos                            WAZIS
@@ -935,7 +936,7 @@
       *     code crtsrv                1 pos                            WAZIS
       * 3-cette zone doit pouvoir aussi accueillir d'autres sujets    * WAZIS
       *    param etc...                                               * WAZIS
-      *    voir la possibilité d'ecrire cà sur une table db2 erreurs  * WAZIS
+      *    voir la possibilitï¿½ d'ecrire cï¿½ sur une table db2 erreurs  * WAZIS
       *---------------------------------------------------------------* WAZIS
            11 AZIS-ERREUR                        PIC X(93).             WAZIS
            11 AZIS-ERREUR-IGAD REDEFINES AZIS-ERREUR.                   WAZIS
@@ -990,7 +991,7 @@
       *---------------------------------------------------------------* WAZIS
       *****11  AZIS-PARAMETRES.                                         WAZIS
       ******  15 AZIS-ORIGIN0X.                                         WAZIS
-      *  Passé **17 azis-origin0               pic s9(8) binary.        WAZIS
+      *  Passï¿½ **17 azis-origin0               pic s9(8) binary.        WAZIS
       *  dans   17 AZIS-ORIGIN0                PIC S9(7) COMP-3.        WAZIS
       *  W   15 AZIS-DB4A2M1-X.                                         WAZIS
       *  A      17 AZIS-DB4A2M1                  PIC S9(9) COMP-3.      WAZIS
@@ -1005,9 +1006,9 @@
       *                                                                 WAZIS
             11 AZIS-TAB-PMVT-2.                                         WAZIS
                15 AZIS-LIGNE-PMVT-2 OCCURS 25 INDEXED BY IX-AZIS-PMVT-2.WAZIS
-      *---         Mois de la PMVT avec neccessitée de ré-exécution     WAZIS
+      *---         Mois de la PMVT avec neccessitï¿½e de rï¿½-exï¿½cution     WAZIS
                    20 AZIS-PMVT-2-MOIS            PIC S9(9) COMP-3.     WAZIS
-      *---         Flag notant si ré-exécution necessaire               WAZIS
+      *---         Flag notant si rï¿½-exï¿½cution necessaire               WAZIS
                    20 AZIS-PMVT-2-A-FAIRE         PIC X.                WAZIS
                       88 AZIS-FL-PMVT-2-A-FAIRE       VALUE 'O'.        WAZIS
                       88 AZIS-FL-PMVT-2-PAS-A-FAIRE   VALUE 'N'.        WAZIS
@@ -1020,7 +1021,7 @@
       *---------------------------------------------------------------  WAZIS
       *                Version : V00530                                 WAZIS
       *                                                                 WAZIS
-      * Chantier : MO111     Début : 01/09/1998     Fin : 15/09/1998    WAZIS
+      * Chantier : MO111     Dï¿½but : 01/09/1998     Fin : 15/09/1998    WAZIS
       *                                                                 WAZIS
       * Texte  : zone de communication inter-service AZIS               WAZIS
       *                                                                 WAZIS
@@ -1031,7 +1032,7 @@
       *---------------------------------------------------------------  WAZIS
       *                Version : V00530                                 WAZIS
       *                                                                 WAZIS
-      * Chantier : 0111O     Début : 29/10/1998     Fin : 13/01/1999    WAZIS
+      * Chantier : 0111O     Dï¿½but : 29/10/1998     Fin : 13/01/1999    WAZIS
       *                                                                 WAZIS
       * Texte  : BANALISEE INTER-SERVICES                               WAZIS
       *                                                                 WAZIS
@@ -1042,9 +1043,9 @@
       *---------------------------------------------------------------  WAZIS
       *                Version : V00530                                 WAZIS
       *                                                                 WAZIS
-      * Chantier : 59165     Début : 15/12/1998     Fin : 15/12/1998    WAZIS
+      * Chantier : 59165     Dï¿½but : 15/12/1998     Fin : 15/12/1998    WAZIS
       *                                                                 WAZIS
-      * Texte  : Zones déclarées en BINARY passées en COMP-3 (Pb BULL)  WAZIS
+      * Texte  : Zones dï¿½clarï¿½es en BINARY passï¿½es en COMP-3 (Pb BULL)  WAZIS
       *                                                                 WAZIS
       *                                                                 WAZIS
       *                                                                 WAZIS
@@ -1054,7 +1055,7 @@
       *---------------------------------------------------------------  WAZIS
       *                Version : V01010                                 WAZIS
       *                                                                 WAZIS
-      * Chantier : 0590B     Début : 30/10/2002     Fin : 18/11/2002    WAZIS
+      * Chantier : 0590B     Dï¿½but : 30/10/2002     Fin : 18/11/2002    WAZIS
       *                                                                 WAZIS
       * Texte  :                                                        WAZIS
       *                                                                 WAZIS
@@ -1066,7 +1067,7 @@
       *---------------------------------------------------------------  WAZIS
       *                Version : V03320                                 WAZIS
       *                                                                 WAZIS
-      * Chantier : 2050A     Début : 10/01/2011     Fin : 10/01/2011    WAZIS
+      * Chantier : 2050A     Dï¿½but : 10/01/2011     Fin : 10/01/2011    WAZIS
       *                                                                 WAZIS
       * Texte  :                                                        WAZIS
       *                                                                 WAZIS
@@ -1078,7 +1079,7 @@
       *---------------------------------------------------------------  WAZIS
       *                Version : V03410                                 WAZIS
       *                                                                 WAZIS
-      * Chantier : 2050E     Début : 14/04/2011     Fin : 26/05/2011    WAZIS
+      * Chantier : 2050E     Dï¿½but : 14/04/2011     Fin : 26/05/2011    WAZIS
       *                                                                 WAZIS
       * Texte  :                                                        WAZIS
       *                                                                 WAZIS
@@ -1090,7 +1091,7 @@
       *---------------------------------------------------------------  WAZIS
       *                Version : V03500                                 WAZIS
       *                                                                 WAZIS
-      * Chantier : 2050H     Début : 29/07/2011     Fin : 17/08/2011    WAZIS
+      * Chantier : 2050H     Dï¿½but : 29/07/2011     Fin : 17/08/2011    WAZIS
       *                                                                 WAZIS
       * Texte  :                                                        WAZIS
       *                                                                 WAZIS
@@ -1112,11 +1113,11 @@
       ***************************************************************** WAZIS2
       ***************************************************************** WAZIS2
       ***  ! ! ! ! ! ! ! !    A T T E N T I O N    ! ! ! ! ! ! ! !  *** WAZIS2
-      ***  En TP, les VALUE sont à prendre à titre indicatif => les *** WAZIS2
-      ***  valeurs réelles / Données sont calculées applicativement *** WAZIS2
-      ***        (Voir AZDRV0AK - Pavés Initialisation AZIS )       *** WAZIS2
+      ***  En TP, les VALUE sont ï¿½ prendre ï¿½ titre indicatif => les *** WAZIS2
+      ***  valeurs rï¿½elles / Donnï¿½es sont calculï¿½es applicativement *** WAZIS2
+      ***        (Voir AZDRV0AK - Pavï¿½s Initialisation AZIS )       *** WAZIS2
       ***  Ds modules de la LOCCOM, INITIALIZE d'un niveau 01 avec  *** WAZIS2
-      ***  AZIS pour 500 + 29500 caract.  ==>  Annulat° des VALUE)  *** WAZIS2
+      ***  AZIS pour 500 + 29500 caract.  ==>  Annulatï¿½ des VALUE)  *** WAZIS2
       ***  ! ! ! ! ! ! ! !    A T T E N T I O N    ! ! ! ! ! ! ! !  *** WAZIS2
       ***************************************************************** WAZIS2
       ***************************************************************** WAZIS2
@@ -1124,9 +1125,9 @@
       *    11 azis2-filler                        pic x(29500).         WAZIS2
       *    11 azis-donnees redefines azis2-filler.                      WAZIS2
       *---------------------------------------------------------------* WAZIS2
-      * Parametres Généraux AZIS                                        WAZIS2
+      * Parametres Gï¿½nï¿½raux AZIS                                        WAZIS2
       *    origine de la banalisee                                      WAZIS2
-      *    date debut  +  date fin  P.Mouvementée GESDRO                WAZIS2
+      *    date debut  +  date fin  P.Mouvementï¿½e GESDRO                WAZIS2
       *    date Mois en Cours                                           WAZIS2
       *    flag explosion generale et explosion CDDRV                   WAZIS2
       *---------------------------------------------------------------* WAZIS2
@@ -1141,10 +1142,10 @@
                  15 AZIS-EXPLO-GENE                  PIC X value '2'.   WAZIS2
                  15 AZIS-DRV-EXPLO                   PIC X value '2'.   WAZIS2
       *---------------------------------------------------------------* WAZIS2
-      * Parametres AZIS liés à la CDDRV                                 WAZIS2
+      * Parametres AZIS liï¿½s ï¿½ la CDDRV                                 WAZIS2
       *    longueur maillon                                             WAZIS2
       *    longueur datas                                               WAZIS2
-      * Zones de travail liées à la CDDRV                               WAZIS2
+      * Zones de travail liï¿½es ï¿½ la CDDRV                               WAZIS2
       *---------------------------------------------------------------* WAZIS2
               13 AZIS-DRV-PARAMETRES.                                   WAZIS2
                  15 AZIS-DRV-LNG-TOT        PIC S9(3) COMP-3 VALUE  34. WAZIS2
@@ -1284,7 +1285,7 @@
       **        15 AZIM-BAN REDEFINES AZIS-BAN.                         WAZIS2
       **          17 AZIM-FIXE.                                         WAZIS2
       *----------------------------------                               WAZIS2
-      *  la pelem ou la pgene à etudier                                 WAZIS2
+      *  la pelem ou la pgene ï¿½ etudier                                 WAZIS2
       *----------------------------------                               WAZIS2
       **            20 AZIM-CNAPRG.                                     WAZIS2
       **              25 AZIM-CNAPRS          PIC X(3).                 WAZIS2
@@ -1327,7 +1328,7 @@
       *-------------------------------------------------------------    WAZIS2
       *          17 AZIM-AUTRE.                                         WAZIS2
       *-------------------------------------------------------------    WAZIS2
-      * mois en cours du dossier doit toujours etre > à mois traité     WAZIS2
+      * mois en cours du dossier doit toujours etre > ï¿½ mois traitï¿½     WAZIS2
       *------------------------------------------------------------     WAZIS2
       *            20 AZIM-DOS.                                         WAZIS2
       *               30 AZIM-DOS-ZZZ-DMCDOS  PIC S9(9) COMP-3.         WAZIS2
@@ -1355,7 +1356,7 @@
       *               30 AZIM-AL0-ALC-CFAPRS  PIC X(3).                 WAZIS2
       *            20 AZIM-RESERVE            PIC X(10).                WAZIS2
       *-------------------------------------------------------------    WAZIS2
-      * les personnes constituant le dossier exprimé en nombre          WAZIS2
+      * les personnes constituant le dossier exprimï¿½ en nombre          WAZIS2
       *-------------------------------------------------------          WAZIS2
       *            20 AZIM-DP0.                                         WAZIS2
       *               30 AZIM-DP0-CDP-MON     PIC 9(1).                 WAZIS2
@@ -1469,8 +1470,8 @@
       *-------------------------------------------------------------    WAZIS2
       *-------------------------------------------------------------    WAZIS2
       *-------------------------------------------------------------    WAZIS2
-      * les valeurs retournées de l examen de droit                     WAZIS2
-      * à destination de l affichage                                    WAZIS2
+      * les valeurs retournï¿½es de l examen de droit                     WAZIS2
+      * ï¿½ destination de l affichage                                    WAZIS2
       *---------------------------------------------                    WAZIS2
       *            20 AZIM-RETOUR.                                      WAZIS2
       *               30 AZIM-RETOUR-CNAPRG   PIC X(5).                 WAZIS2
@@ -1506,20 +1507,20 @@
              10 WAZIS-DAD-CAS-I0 REDEFINES WAZIS-DAD-CAS.               WAZIS2
                 15 WAZIS-DAD-I0-I0      PIC XX.                         WAZIS2
                 15 FILLER               PIC X.                          WAZIS2
-      *         * code entité logique                                   WAZIS2
+      *         * code entitï¿½ logique                                   WAZIS2
                 15 WAZIS-DAD-I0-ZENTLG  PIC XXX.                        WAZIS2
       *         * code gdd                                              WAZIS2
                 15 WAZIS-DAD-I0-ZIDGDD  PIC XXX.                        WAZIS2
       *         * position relative dans le gdd                         WAZIS2
                 15 WAZIS-DAD-I0-POREDO  PIC XXX.                        WAZIS2
                 15 WAZIS-F-RESERVE-2    PIC X(8).                       WAZIS2
-      * cas précision choix image amplitude de temps                    WAZIS2
+      * cas prï¿½cision choix image amplitude de temps                    WAZIS2
              10 WAZIS-DAD-CAS-IA REDEFINES WAZIS-DAD-CAS.               WAZIS2
                 15 WAZIS-DAD-IA-IA      PIC XX.                         WAZIS2
                 15 FILLER               PIC X.                          WAZIS2
-      *         * image vcm souhaitée pour le couple zentlg zidgdd      WAZIS2
+      *         * image vcm souhaitï¿½e pour le couple zentlg zidgdd      WAZIS2
                 15 WAZIS-DAD-IA-ZDSVCM  PIC X.                          WAZIS2
-      *         * date début recherche pour le couple zentlg zidgdd     WAZIS2
+      *         * date dï¿½but recherche pour le couple zentlg zidgdd     WAZIS2
                 15 WAZIS-DAD-IA-ZDTDEB  PIC S9(9) COMP-3.               WAZIS2
       *         * date fin   recherche pour le couple zentlg zidgdd     WAZIS2
                 15 WAZIS-DAD-IA-ZDTFIN  PIC S9(9) COMP-3.               WAZIS2
@@ -1532,7 +1533,7 @@
       *---------------------------------------------------------------  WAZIS2
       *                Version : V03310                                 WAZIS2
       *                                                                 WAZIS2
-      * Chantier : 1R331     Début : 17/11/2010     Fin : 17/11/2010    WAZIS2
+      * Chantier : 1R331     Dï¿½but : 17/11/2010     Fin : 17/11/2010    WAZIS2
       *                                                                 WAZIS2
       * Texte  :                                                        WAZIS2
       *                                                                 WAZIS2
@@ -1544,7 +1545,7 @@
       *---------------------------------------------------------------  WAZIS2
       *                Version : V03320                                 WAZIS2
       *                                                                 WAZIS2
-      * Chantier : 2050A     Début : 22/12/2010     Fin : 10/01/2011    WAZIS2
+      * Chantier : 2050A     Dï¿½but : 22/12/2010     Fin : 10/01/2011    WAZIS2
       *                                                                 WAZIS2
       * Texte  :                                                        WAZIS2
       *                                                                 WAZIS2
@@ -1556,7 +1557,7 @@
       *---------------------------------------------------------------  WAZIS2
       *                Version : V03400                                 WAZIS2
       *                                                                 WAZIS2
-      * Chantier : 2050C     Début : 08/02/2011     Fin : 14/02/2011    WAZIS2
+      * Chantier : 2050C     Dï¿½but : 08/02/2011     Fin : 14/02/2011    WAZIS2
       *                                                                 WAZIS2
       * Texte  :                                                        WAZIS2
       *                                                                 WAZIS2
@@ -1568,7 +1569,7 @@
       *---------------------------------------------------------------  WAZIS2
       *                Version : V03410                                 WAZIS2
       *                                                                 WAZIS2
-      * Chantier : 2050E     Début : 14/04/2011     Fin : 20/05/2011    WAZIS2
+      * Chantier : 2050E     Dï¿½but : 14/04/2011     Fin : 20/05/2011    WAZIS2
       *                                                                 WAZIS2
       * Texte  :                                                        WAZIS2
       *                                                                 WAZIS2
@@ -1580,7 +1581,7 @@
       *---------------------------------------------------------------  WAZIS2
       *                Version : V03500                                 WAZIS2
       *                                                                 WAZIS2
-      * Chantier : 2050H     Début : 28/07/2011     Fin : 28/07/2011    WAZIS2
+      * Chantier : 2050H     Dï¿½but : 28/07/2011     Fin : 28/07/2011    WAZIS2
       *                                                                 WAZIS2
       * Texte  :                                                        WAZIS2
       *                                                                 WAZIS2
@@ -1958,7 +1959,7 @@
       *---------------------------------------------------------------  WSHSER02
       *                Version : V02100                                 WSHSER02
       *                                                                 WSHSER02
-      * Chantier : 1651T     Début : 22/02/2007     Fin : 22/02/2007    WSHSER02
+      * Chantier : 1651T     Dï¿½but : 22/02/2007     Fin : 22/02/2007    WSHSER02
       *                                                                 WSHSER02
       * Texte  : Traitement Specifique Bull                             WSHSER02
       *                                                                 WSHSER02
@@ -2018,7 +2019,7 @@
       D    display '(CGS100A)-A00- A0600-HOUSEKEEPING '                 CGS100A
       D    display '(CGS100A)-A01-NOUV-DOSSIER-A-TRAITER '              CGS100A
       D    display '(CGS100A) ****************************************' CGS100A
-      D    display '(CGS100A) *    Début copie recue du client       *' CGS100A
+      D    display '(CGS100A) *    Dï¿½but copie recue du client       *' CGS100A
       D    display '(CGS100A) ****************************************' CGS100A
       d    display '(CGS100A)-A02- S100-ESRV-LGSERV  : '                CGS100A
       d       s100-esrv-lgserv                                          CGS100A
@@ -2052,7 +2053,7 @@
       D    display '(CGS100A) ***** Fin  copie recue du client  ******' CGS100A
       D       '*******************************'                         CGS100A
                                                                         CGS100A
-      *--- Alerte PMVT à zéro !!!!!!!!!!                                CGS100A
+      *--- Alerte PMVT ï¿½ zï¿½ro !!!!!!!!!!                                CGS100A
       D    IF S100-EPTAEX = ZERO                                        CGS100A
       D       Display '(CGS100A) S100-ZAPPLT:' S100-ZAPPLT              CGS100A
       D                       '  S100-NDOMAT:' S100-NDOMAT              CGS100A
@@ -2166,7 +2167,7 @@
       D    display '(CGS100A)-A21- Periode mouvementee : ' s100-eptaex  CGS100A
       D                                         ' - ' S100-FPTAEX.      CGS100A
       D    display '(CGS100A) ****************************************' CGS100A
-      D    display '(CGS100A)-A22- Début copie transmis au CGS101    *' CGS100A
+      D    display '(CGS100A)-A22- Dï¿½but copie transmis au CGS101    *' CGS100A
       D    display '(CGS100A) ****************************************' CGS100A
       D    display '(CGS100A)-A23- S100-ESRV-LGSERV  : '                CGS100A
       D       s100-esrv-lgserv                                          CGS100A
@@ -2257,7 +2258,7 @@
       D       DISPLAY '(CGS100N)    ==> pas de deuxieme appel'          CGS100A
            END-IF.                                                      CGS100A
       *                                                                 CGS100A
-      *    Stockage des dates en cas de Bis Passage 2ème PMVT           CGS100A
+      *    Stockage des dates en cas de Bis Passage 2ï¿½me PMVT           CGS100A
            MOVE WS-DD-PMVT-ORI TO S100-EPTAEX.                          CGS100A
            MOVE WS-DF-PMVT-ORI TO S100-FPTAEX.                          CGS100A
                                                                         CGS100A
@@ -2370,10 +2371,10 @@
       *---------------------------------------------------------------  CGS100A
       *                Version : V00720                                 CGS100A
       *                                                                 CGS100A
-      * Chantier : D3918     Début : 08/06/2001     Fin : 08/06/2001    CGS100A
+      * Chantier : D3918     Dï¿½but : 08/06/2001     Fin : 08/06/2001    CGS100A
       *                                                                 CGS100A
-      * Texte  : Mise en EXPLOSION systématique d'AZIS lorsque la Per. MCGS100A
-      *          de GESDRO est "à cheval" sur 01/2002 et donc Examen/DroCGS100A
+      * Texte  : Mise en EXPLOSION systï¿½matique d'AZIS lorsque la Per. MCGS100A
+      *          de GESDRO est "ï¿½ cheval" sur 01/2002 et donc Examen/DroCGS100A
       *          fait en 2 passages dans CGS100 posant pb entre AZIS/CASCGS100A
       *                                                                 CGS100A
       * DMFS  :                                                         CGS100A
@@ -2381,7 +2382,7 @@
       *---------------------------------------------------------------  CGS100A
       *                Version : V00720                                 CGS100A
       *                                                                 CGS100A
-      * Chantier : 0904T     Début : 08/06/2001     Fin : 08/06/2001    CGS100A
+      * Chantier : 0904T     Dï¿½but : 08/06/2001     Fin : 08/06/2001    CGS100A
       *                                                                 CGS100A
       * Texte  :                                                        CGS100A
       *                                                                 CGS100A
@@ -2393,7 +2394,7 @@
       *---------------------------------------------------------------  CGS100A
       *                Version : V00920                                 CGS100A
       *                                                                 CGS100A
-      * Chantier : AQ015     Début : 20/03/2002     Fin : 21/03/2002    CGS100A
+      * Chantier : AQ015     Dï¿½but : 20/03/2002     Fin : 21/03/2002    CGS100A
       *                                                                 CGS100A
       * Texte  :                                                        CGS100A
       *                                                                 CGS100A
@@ -2405,7 +2406,7 @@
       *---------------------------------------------------------------  CGS100A
       *                Version : V01010                                 CGS100A
       *                                                                 CGS100A
-      * Chantier : 0590B     Début : 21/10/2002     Fin : 18/11/2002    CGS100A
+      * Chantier : 0590B     Dï¿½but : 21/10/2002     Fin : 18/11/2002    CGS100A
       *                                                                 CGS100A
       * Texte  :                                                        CGS100A
       *                                                                 CGS100A
@@ -2417,11 +2418,11 @@
       *---------------------------------------------------------------  CGS100A
       *                Version : V01110                                 CGS100A
       *                                                                 CGS100A
-      * Chantier : DA609     Début : 21/02/2003     Fin : 21/02/2003    CGS100A
+      * Chantier : DA609     Dï¿½but : 21/02/2003     Fin : 21/02/2003    CGS100A
       *                                                                 CGS100A
-      * Texte  : Lorsqu'il y a, sur la période mouvementée, deux changemCGS100A
-      *          de logement, on doit bien repasser, une deuxième fois, CGS100A
-      *          sur les périodes englobant ces deux logements.         CGS100A
+      * Texte  : Lorsqu'il y a, sur la pï¿½riode mouvementï¿½e, deux changemCGS100A
+      *          de logement, on doit bien repasser, une deuxiï¿½me fois, CGS100A
+      *          sur les pï¿½riodes englobant ces deux logements.         CGS100A
       *                                                                 CGS100A
       * DMFS  :                                                         CGS100A
       *       :                                                         CGS100A
@@ -2429,7 +2430,7 @@
       *---------------------------------------------------------------  CGS100A
       *                Version : V01400                                 CGS100A
       *                                                                 CGS100A
-      * Chantier : AQ015     Début : 10/03/2004     Fin : 10/03/2004    CGS100A
+      * Chantier : AQ015     Dï¿½but : 10/03/2004     Fin : 10/03/2004    CGS100A
       *                                                                 CGS100A
       * Texte  :                                                        CGS100A
       *                                                                 CGS100A
@@ -2441,7 +2442,7 @@
       *---------------------------------------------------------------  CGS100A
       *                Version : V01500                                 CGS100A
       *                                                                 CGS100A
-      * Chantier : AQ015     Début : 20/07/2004     Fin : 20/07/2004    CGS100A
+      * Chantier : AQ015     Dï¿½but : 20/07/2004     Fin : 20/07/2004    CGS100A
       *                                                                 CGS100A
       * Texte  :                                                        CGS100A
       *                                                                 CGS100A
@@ -2452,7 +2453,7 @@
       *---------------------------------------------------------------  CGS100A
       *                Version : V01500                                 CGS100A
       *                                                                 CGS100A
-      * Chantier : AQ050     Début : 11/05/2004     Fin : 17/05/2004    CGS100A
+      * Chantier : AQ050     Dï¿½but : 11/05/2004     Fin : 17/05/2004    CGS100A
       *                                                                 CGS100A
       * Texte  :                                                        CGS100A
       *                                                                 CGS100A
@@ -2464,7 +2465,7 @@
       *---------------------------------------------------------------  CGS100A
       *                Version : V02500                                 CGS100A
       *                                                                 CGS100A
-      * Chantier : 1R250     Début : 04/08/2008     Fin : 04/08/2008    CGS100A
+      * Chantier : 1R250     Dï¿½but : 04/08/2008     Fin : 04/08/2008    CGS100A
       *                                                                 CGS100A
       * Texte  :                                                        CGS100A
       *                                                                 CGS100A
@@ -2476,7 +2477,7 @@
       *---------------------------------------------------------------  CGS100A
       *                Version : V03320                                 CGS100A
       *                                                                 CGS100A
-      * Chantier : 2050A     Début : 29/12/2010     Fin : 29/12/2010    CGS100A
+      * Chantier : 2050A     Dï¿½but : 29/12/2010     Fin : 29/12/2010    CGS100A
       *                                                                 CGS100A
       * Texte  :                                                        CGS100A
       *                                                                 CGS100A
@@ -2488,7 +2489,7 @@
       *---------------------------------------------------------------  CGS100A
       *                Version : V03400                                 CGS100A
       *                                                                 CGS100A
-      * Chantier : 2050C     Début : 16/02/2011     Fin : 23/02/2011    CGS100A
+      * Chantier : 2050C     Dï¿½but : 16/02/2011     Fin : 23/02/2011    CGS100A
       *                                                                 CGS100A
       * Texte  :                                                        CGS100A
       *                                                                 CGS100A
@@ -2500,7 +2501,7 @@
       *---------------------------------------------------------------  CGS100A
       *                Version : V03410                                 CGS100A
       *                                                                 CGS100A
-      * Chantier : E4766     Début : 19/04/2011     Fin : 22/04/2011    CGS100A
+      * Chantier : E4766     Dï¿½but : 19/04/2011     Fin : 22/04/2011    CGS100A
       *                                                                 CGS100A
       * Texte  :                                                        CGS100A
       *                                                                 CGS100A
@@ -2511,7 +2512,7 @@
       *---------------------------------------------------------------  CGS100A
       *                Version : V03410                                 CGS100A
       *                                                                 CGS100A
-      * Chantier : 2050E     Début : 12/05/2011     Fin : 12/05/2011    CGS100A
+      * Chantier : 2050E     Dï¿½but : 12/05/2011     Fin : 12/05/2011    CGS100A
       *                                                                 CGS100A
       * Texte  :                                                        CGS100A
       *                                                                 CGS100A
@@ -2523,7 +2524,7 @@
       *---------------------------------------------------------------  CGS100A
       *                Version : V03510                                 CGS100A
       *                                                                 CGS100A
-      * Chantier : 2050L     Début : 26/09/2011     Fin : 26/09/2011    CGS100A
+      * Chantier : 2050L     Dï¿½but : 26/09/2011     Fin : 26/09/2011    CGS100A
       *                                                                 CGS100A
       * Texte  :                                                        CGS100A
       *                                                                 CGS100A
@@ -2535,7 +2536,7 @@
       *---------------------------------------------------------------  CGS100A
       *                Version : V03600                                 CGS100A
       *                                                                 CGS100A
-      * Chantier : 2152A     Début : 25/01/2012     Fin : 25/01/2012    CGS100A
+      * Chantier : 2152A     Dï¿½but : 25/01/2012     Fin : 25/01/2012    CGS100A
       *                                                                 CGS100A
       * Texte  :                                                        CGS100A
       *                                                                 CGS100A
@@ -2547,7 +2548,7 @@
       *---------------------------------------------------------------  CGS100A
       *                Version : V03700                                 CGS100A
       *                                                                 CGS100A
-      * Chantier : F9560     Début : 18/04/2012     Fin : 18/04/2012    CGS100A
+      * Chantier : F9560     Dï¿½but : 18/04/2012     Fin : 18/04/2012    CGS100A
       *                                                                 CGS100A
       * Texte  :                                                        CGS100A
       *                                                                 CGS100A
@@ -2559,7 +2560,7 @@
       *---------------------------------------------------------------  CGS100A
       *                Version : V03900                                 CGS100A
       *                                                                 CGS100A
-      * Chantier : 1R390     Début : 21/01/2013     Fin : 21/01/2013    CGS100A
+      * Chantier : 1R390     Dï¿½but : 21/01/2013     Fin : 21/01/2013    CGS100A
       *                                                                 CGS100A
       * Texte  :                                                        CGS100A
       *                                                                 CGS100A
@@ -2571,7 +2572,7 @@
       *---------------------------------------------------------------  CGS100A
       *                Version : V04000                                 CGS100A
       *                                                                 CGS100A
-      * Chantier : 2238I     Début : 14/05/2013     Fin : 14/05/2013    CGS100A
+      * Chantier : 2238I     Dï¿½but : 14/05/2013     Fin : 14/05/2013    CGS100A
       *                                                                 CGS100A
       * Texte  :                                                        CGS100A
       *                                                                 CGS100A
@@ -2583,7 +2584,7 @@
       *---------------------------------------------------------------  CGS100A
       *                Version : V04401                                 CGS100A
       *                                                                 CGS100A
-      * Chantier : 1R440     Début : 05/11/2014     Fin : 05/11/2014    CGS100A
+      * Chantier : 1R440     Dï¿½but : 05/11/2014     Fin : 05/11/2014    CGS100A
       *                                                                 CGS100A
       * Texte  :                                                        CGS100A
       *                                                                 CGS100A
@@ -2595,7 +2596,7 @@
       *---------------------------------------------------------------  CGS100A
       *                Version : V05100                                 CGS100A
       *                                                                 CGS100A
-      * Chantier : 1R510     Début : 14/03/2017     Fin : 14/03/2017    CGS100A
+      * Chantier : 1R510     Dï¿½but : 14/03/2017     Fin : 14/03/2017    CGS100A
       *                                                                 CGS100A
       * Texte  :                                                        CGS100A
       *                                                                 CGS100A
@@ -2626,7 +2627,7 @@
       *---------------------------------------------------------------  CGS101AK
       *                Version : V00720                                 CGS101AK
       *                                                                 CGS101AK
-      * Chantier : 0904T     Début : 21/03/2001     Fin : 22/03/2001    CGS101AK
+      * Chantier : 0904T     Dï¿½but : 21/03/2001     Fin : 22/03/2001    CGS101AK
       *                                                                 CGS101AK
       * Texte  :                                                        CGS101AK
       *                                                                 CGS101AK
