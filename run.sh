@@ -13,7 +13,8 @@ NEWCODE_DATE=`git show -s --format=%cd --date=format:'%Y-%m-%d'`
 
 # Run baseline analysis - wait for quality gate to ensure analysis ID is available
 sonar-scanner -Dsonar.host.url=$SONAR_HOST_URL -Dsonar.login=$SONAR_TOKEN -Dsonar.projectKey=$PK \
-  -Dsonar.projectDate=$NEWCODE_DATE -Dsonar.qualitygate.wait=true -Dsonar.sourceEncoding=iso-8859-15
+  -Dsonar.projectDate=$NEWCODE_DATE -Dsonar.qualitygate.wait=true \
+  -Dsonar.sourceEncoding=iso-8859-15 -Dsonar.cobol.file.suffixes=cob
 
 #Retrive analysis ID from SQ
 ANALYSIS_DATA=`curl -X POST -u $SONAR_TOKEN: $SONAR_HOST_URL/api/project_analyses/search?project=$PK`
@@ -31,4 +32,5 @@ curl -X POST -u $SONAR_TOKEN: \
 git checkout $MAIN_BRANCH
 
 #Run New code analysis
-sonar-scanner -Dsonar.host.url=$SONAR_HOST_URL -Dsonar.login=$SONAR_TOKEN -Dsonar.projectKey=$PK -Dsonar.sourceEncoding=iso-8859-15
+sonar-scanner -Dsonar.host.url=$SONAR_HOST_URL -Dsonar.login=$SONAR_TOKEN -Dsonar.projectKey=$PK \
+  -Dsonar.sourceEncoding=iso-8859-15 -Dsonar.cobol.file.suffixes=cob
